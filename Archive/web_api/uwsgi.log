@@ -1,0 +1,194 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Thu Apr  7 09:56:51 2022] ***
+compiled with version: 9.4.0 on 06 April 2022 15:05:18
+os: Linux-5.4.0-100-generic #113-Ubuntu SMP Thu Feb 3 18:43:29 UTC 2022
+nodename: qax
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /var/www/Archive/web_api
+detected binary path: /var/www/Archive/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/Archive/web_api
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 63803
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.20 (64bit) on [Thu Apr  7 10:13:40 2022] ***
+compiled with version: 9.4.0 on 06 April 2022 15:05:18
+os: Linux-5.4.0-100-generic #113-Ubuntu SMP Thu Feb 3 18:43:29 UTC 2022
+nodename: qax
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /var/www/Archive/web_api
+detected binary path: /var/www/Archive/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/Archive/web_api
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 63803
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.20 (64bit) on [Thu Apr  7 10:15:59 2022] ***
+compiled with version: 9.4.0 on 06 April 2022 15:05:18
+os: Linux-5.4.0-100-generic #113-Ubuntu SMP Thu Feb 3 18:43:29 UTC 2022
+nodename: qax
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /var/www/Archive/web_api
+detected binary path: /var/www/Archive/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/Archive
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 63803
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.20 (64bit) on [Thu Apr  7 10:16:47 2022] ***
+compiled with version: 9.4.0 on 06 April 2022 15:05:18
+os: Linux-5.4.0-100-generic #113-Ubuntu SMP Thu Feb 3 18:43:29 UTC 2022
+nodename: qax
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /var/www/Archive/web_api
+detected binary path: /var/www/Archive/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/Archive
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 63803
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.20 (64bit) on [Thu Apr  7 10:18:59 2022] ***
+compiled with version: 9.4.0 on 06 April 2022 15:05:18
+os: Linux-5.4.0-100-generic #113-Ubuntu SMP Thu Feb 3 18:43:29 UTC 2022
+nodename: qax
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /var/www/Archive/web_api
+detected binary path: /var/www/Archive/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /var/www/Archive
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 63803
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.23 (64bit) on [Sat Nov 11 09:16:50 2023] ***
+compiled with version: 9.4.0 on 10 November 2023 15:39:39
+os: Linux-5.4.0-166-generic #183-Ubuntu SMP Mon Oct 2 11:28:33 UTC 2023
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 32
+current working directory: /var/www/Archive/web_api
+detected binary path: /var/www/Archive/venv/bin/uwsgi
+chdir() to /var/www/Archive/web_api
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 256847
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 10.0.2.130:8080 fd 4
+spawned uWSGI http 1 (pid: 12666)
+uwsgi socket 0 bound to TCP address 127.0.0.1:43009 (port auto-assigned) fd 3
+Python version: 3.8.10 (default, May 26 2023, 14:05:08)  [GCC 9.4.0]
+Python main interpreter initialized at 0x5599b7add190
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 208576 bytes (203 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5599b7add190 pid: 12665 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (pid: 12665, cores: 4)
+spawned uWSGI worker 2 (pid: 12669, cores: 4)
+[pid: 12665|app: 0|req: 1/1] 10.0.3.63 () {42 vars in 693 bytes} [Sat Nov 11 09:17:10 2023] POST /api/analyze => generated 1563 bytes in 114 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 12669|app: 0|req: 1/2] 10.0.3.63 () {42 vars in 693 bytes} [Sat Nov 11 09:17:15 2023] POST /api/analyze => generated 4431 bytes in 114 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 12665|app: 0|req: 2/3] 10.0.3.63 () {42 vars in 693 bytes} [Sat Nov 11 09:18:07 2023] POST /api/analyze => generated 1563 bytes in 108 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 1)
+[pid: 12665|app: 0|req: 3/4] 10.0.3.63 () {42 vars in 693 bytes} [Sat Nov 11 09:21:46 2023] POST /api/analyze => generated 1563 bytes in 119 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 3)
+[pid: 12669|app: 0|req: 2/5] 10.0.3.63 () {42 vars in 693 bytes} [Sat Nov 11 09:21:53 2023] POST /api/analyze => generated 5021 bytes in 97 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 2)
+[pid: 12665|app: 0|req: 4/6] 10.0.3.63 () {42 vars in 693 bytes} [Sat Nov 11 10:25:07 2023] POST /api/analyze => generated 5021 bytes in 102 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 2)
+[pid: 12669|app: 0|req: 3/7] 10.0.3.63 () {42 vars in 693 bytes} [Sat Nov 11 10:25:11 2023] POST /api/analyze => generated 4431 bytes in 113 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 12665|app: 0|req: 5/8] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 11 13:18:37 2023] POST /api/analyze => generated 478 bytes in 101 msecs (HTTP/1.1 200) 5 headers in 174 bytes (1 switches on core 0)
+[pid: 12669|app: 0|req: 4/9] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 11 13:22:46 2023] POST /api/analyze => generated 4431 bytes in 119 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 3)
+[pid: 12665|app: 0|req: 6/10] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 11 13:22:53 2023] POST /api/analyze => generated 5021 bytes in 101 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 1)
+[pid: 12669|app: 0|req: 5/11] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 11 13:24:00 2023] POST /api/analyze => generated 1563 bytes in 112 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 1)
+[pid: 12665|app: 0|req: 7/12] 10.0.3.63 () {42 vars in 696 bytes} [Sun Nov 12 08:02:23 2023] POST /api/analyze => generated 1563 bytes in 130 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 2)
+[pid: 12669|app: 0|req: 6/13] 10.0.3.63 () {42 vars in 693 bytes} [Mon Nov 13 07:25:35 2023] POST /api/analyze => generated 1563 bytes in 183 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 2)
+[pid: 12665|app: 0|req: 8/14] 10.0.3.63 () {42 vars in 693 bytes} [Mon Nov 13 07:39:55 2023] POST /api/analyze => generated 5021 bytes in 107 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 12665|app: 0|req: 9/15] 10.0.3.63 () {42 vars in 696 bytes} [Mon Nov 13 11:43:25 2023] POST /api/analyze => generated 478 bytes in 104 msecs (HTTP/1.1 200) 5 headers in 174 bytes (1 switches on core 1)
+[pid: 12665|app: 0|req: 10/16] 10.0.3.63 () {42 vars in 696 bytes} [Mon Nov 13 11:44:32 2023] POST /api/analyze => generated 4431 bytes in 117 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 2)
+[pid: 12669|app: 0|req: 7/17] 10.0.3.63 () {42 vars in 696 bytes} [Mon Nov 13 12:31:31 2023] POST /api/analyze => generated 478 bytes in 111 msecs (HTTP/1.1 200) 5 headers in 174 bytes (1 switches on core 0)
+[pid: 12669|app: 0|req: 8/18] 10.0.3.63 () {42 vars in 692 bytes} [Mon Nov 13 15:43:11 2023] POST /api/analyze => generated 846 bytes in 140 msecs (HTTP/1.1 200) 5 headers in 174 bytes (1 switches on core 3)
+[pid: 12665|app: 0|req: 11/19] 10.0.3.63 () {42 vars in 693 bytes} [Mon Nov 13 15:44:04 2023] POST /api/analyze => generated 846 bytes in 140 msecs (HTTP/1.1 200) 5 headers in 174 bytes (1 switches on core 3)
+[pid: 12669|app: 0|req: 9/20] 10.0.3.63 () {42 vars in 695 bytes} [Tue Nov 14 07:10:42 2023] POST /api/analyze => generated 4431 bytes in 154 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 1)
+[pid: 12665|app: 0|req: 12/21] 10.0.3.63 () {42 vars in 695 bytes} [Tue Nov 14 07:11:09 2023] POST /api/analyze => generated 4416 bytes in 130 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 2)
+[pid: 12669|app: 0|req: 10/22] 10.0.3.63 () {42 vars in 696 bytes} [Tue Nov 14 07:28:12 2023] POST /api/analyze => generated 846 bytes in 142 msecs (HTTP/1.1 200) 5 headers in 174 bytes (1 switches on core 0)
+[pid: 12665|app: 0|req: 13/23] 10.0.3.63 () {42 vars in 696 bytes} [Tue Nov 14 07:28:16 2023] POST /api/analyze => generated 1563 bytes in 110 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 12665|app: 0|req: 14/24] 10.0.3.63 () {42 vars in 696 bytes} [Tue Nov 14 07:28:19 2023] POST /api/analyze => generated 5021 bytes in 98 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 3)
+[pid: 12669|app: 0|req: 11/25] 10.0.3.63 () {42 vars in 696 bytes} [Tue Nov 14 07:28:21 2023] POST /api/analyze => generated 4431 bytes in 113 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 3)
+[pid: 12665|app: 0|req: 15/26] 10.0.3.63 () {42 vars in 693 bytes} [Thu Nov 16 07:41:32 2023] POST /api/analyze => generated 846 bytes in 141 msecs (HTTP/1.1 200) 5 headers in 174 bytes (1 switches on core 2)
+[pid: 12669|app: 0|req: 12/27] 10.0.3.63 () {42 vars in 696 bytes} [Fri Nov 17 08:26:34 2023] POST /api/analyze => generated 846 bytes in 141 msecs (HTTP/1.1 200) 5 headers in 174 bytes (1 switches on core 0)
+[pid: 12665|app: 0|req: 16/28] 10.0.3.63 () {42 vars in 696 bytes} [Fri Nov 17 08:26:39 2023] POST /api/analyze => generated 4431 bytes in 111 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 12669|app: 0|req: 13/29] 10.0.3.63 () {42 vars in 696 bytes} [Fri Nov 17 08:26:41 2023] POST /api/analyze => generated 5021 bytes in 98 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 2)
+[pid: 12665|app: 0|req: 17/30] 10.0.3.63 () {42 vars in 696 bytes} [Fri Nov 17 08:26:44 2023] POST /api/analyze => generated 1563 bytes in 104 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 3)
+[pid: 12669|app: 0|req: 14/31] 10.0.3.63 () {42 vars in 695 bytes} [Fri Nov 17 08:34:01 2023] POST /api/analyze => generated 1563 bytes in 111 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 3)
+[pid: 12665|app: 0|req: 18/32] 10.0.3.63 () {42 vars in 695 bytes} [Fri Nov 17 08:34:53 2023] POST /api/analyze => generated 846 bytes in 136 msecs (HTTP/1.1 200) 5 headers in 174 bytes (1 switches on core 1)
+[pid: 12669|app: 0|req: 15/33] 10.0.3.63 () {42 vars in 695 bytes} [Fri Nov 17 08:35:22 2023] POST /api/analyze => generated 4431 bytes in 115 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 1)
+[pid: 12665|app: 0|req: 19/34] 10.0.3.63 () {42 vars in 693 bytes} [Fri Nov 17 08:59:45 2023] POST /api/analyze => generated 5021 bytes in 102 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 12665|app: 0|req: 20/35] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 18 02:20:21 2023] POST /api/analyze => generated 5021 bytes in 104 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 3)
+[pid: 12669|app: 0|req: 16/36] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 18 12:50:27 2023] POST /api/analyze => generated 4431 bytes in 121 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 12665|app: 0|req: 21/37] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 18 12:50:30 2023] POST /api/analyze => generated 5021 bytes in 94 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 1)
+[pid: 12665|app: 0|req: 22/38] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 18 12:50:32 2023] POST /api/analyze => generated 846 bytes in 134 msecs (HTTP/1.1 200) 5 headers in 174 bytes (1 switches on core 0)
+[pid: 12669|app: 0|req: 17/39] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 18 12:50:34 2023] POST /api/analyze => generated 1563 bytes in 104 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 1)
+[pid: 12665|app: 0|req: 23/40] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 18 12:50:38 2023] POST /api/analyze => generated 4431 bytes in 113 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 2)
+[pid: 12669|app: 0|req: 18/41] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 18 12:50:55 2023] POST /api/analyze => generated 4416 bytes in 111 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 3)
+[pid: 12665|app: 0|req: 24/42] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 18 12:51:04 2023] POST /api/analyze => generated 4431 bytes in 111 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 1)
+[pid: 12669|app: 0|req: 19/43] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 18 12:51:21 2023] POST /api/analyze => generated 361 bytes in 111 msecs (HTTP/1.1 200) 5 headers in 174 bytes (1 switches on core 0)
+[pid: 12665|app: 0|req: 25/44] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 18 12:51:40 2023] POST /api/analyze => generated 4431 bytes in 115 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 12669|app: 0|req: 20/45] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 18 12:52:12 2023] POST /api/analyze => generated 4431 bytes in 112 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 1)
+[pid: 12665|app: 0|req: 26/46] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 18 12:52:43 2023] POST /api/analyze => generated 4431 bytes in 111 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 2)
+[pid: 12665|app: 0|req: 27/47] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 18 12:53:31 2023] POST /api/analyze => generated 4432 bytes in 112 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 3)
+[pid: 12669|app: 0|req: 21/48] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 18 13:14:10 2023] POST /api/analyze => generated 4431 bytes in 113 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 2)
+[pid: 12669|app: 0|req: 22/49] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 18 13:39:53 2023] POST /api/analyze => generated 4416 bytes in 114 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 1)
+[pid: 12665|app: 0|req: 28/50] 10.0.3.63 () {42 vars in 696 bytes} [Sat Nov 18 13:44:28 2023] POST /api/analyze => generated 846 bytes in 137 msecs (HTTP/1.1 200) 5 headers in 174 bytes (1 switches on core 1)
+[pid: 12669|app: 0|req: 23/51] 10.0.3.63 () {42 vars in 734 bytes} [Sat Nov 18 15:23:28 2023] POST /api/analyze => generated 4431 bytes in 120 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 3)
+[pid: 12665|app: 0|req: 29/52] 10.0.3.63 () {42 vars in 733 bytes} [Sat Nov 18 15:27:51 2023] POST /api/analyze => generated 4431 bytes in 113 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 3)
+[pid: 12669|app: 0|req: 24/53] 10.0.3.63 () {42 vars in 733 bytes} [Sat Nov 18 15:28:26 2023] POST /api/analyze => generated 4416 bytes in 112 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 12669|app: 0|req: 25/54] 10.0.3.63 () {42 vars in 733 bytes} [Sat Nov 18 15:28:41 2023] POST /api/analyze => generated 4431 bytes in 111 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 1)
+[pid: 12665|app: 0|req: 30/55] 10.0.3.63 () {42 vars in 733 bytes} [Sat Nov 18 15:28:59 2023] POST /api/analyze => generated 846 bytes in 133 msecs (HTTP/1.1 200) 5 headers in 174 bytes (1 switches on core 0)
+[pid: 12669|app: 0|req: 26/56] 10.0.3.63 () {42 vars in 733 bytes} [Sat Nov 18 15:29:06 2023] POST /api/analyze => generated 5021 bytes in 95 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 3)
+[pid: 12665|app: 0|req: 31/57] 10.0.3.63 () {42 vars in 733 bytes} [Sat Nov 18 15:29:11 2023] POST /api/analyze => generated 1563 bytes in 106 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 1)
+[pid: 12669|app: 0|req: 27/58] 10.0.3.63 () {42 vars in 733 bytes} [Sat Nov 18 15:31:39 2023] POST /api/analyze => generated 4431 bytes in 112 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 12665|app: 0|req: 32/59] 10.0.3.63 () {42 vars in 733 bytes} [Sat Nov 18 15:32:10 2023] POST /api/analyze => generated 4416 bytes in 111 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 2)
+[pid: 12669|app: 0|req: 28/60] 10.0.3.63 () {42 vars in 734 bytes} [Sat Nov 18 15:32:19 2023] POST /api/analyze => generated 4431 bytes in 111 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 1)
+[pid: 12665|app: 0|req: 33/61] 10.0.3.63 () {42 vars in 734 bytes} [Sat Nov 18 15:32:40 2023] POST /api/analyze => generated 846 bytes in 133 msecs (HTTP/1.1 200) 5 headers in 174 bytes (1 switches on core 0)
+[pid: 12669|app: 0|req: 29/62] 10.0.3.63 () {42 vars in 734 bytes} [Sat Nov 18 15:32:45 2023] POST /api/analyze => generated 5021 bytes in 98 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 2)
+[pid: 12665|app: 0|req: 34/63] 10.0.3.63 () {42 vars in 734 bytes} [Sat Nov 18 15:32:53 2023] POST /api/analyze => generated 1563 bytes in 105 msecs (HTTP/1.1 200) 5 headers in 175 bytes (1 switches on core 1)

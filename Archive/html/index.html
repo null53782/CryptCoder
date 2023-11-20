@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="zh-CN">
+  <title>CryptTool</title>
+  <meta charset="UTF-8">
+  <!--允许所有域名的脚本 访问该资源-->
+  <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+  <!-- 移动端 浏览器中页面将以原始大小显示-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 优先使用 IE 最新版本和 Chrome -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!--告诉浏览器这个网址应该用哪个内核渲染，那么浏览器就会在读取到这个标签后，立即切换对应的内核-->
+  <meta name="renderer" content="webkit">
+  <!--iphone会把一串数字识别为电话号码，点击时会提示是否呼叫，屏蔽这一功能-->
+  <meta content="telephone=no" name="format-detection" />
+  <!--禁止百度转码-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/jstree.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/eclipse.css">
+  <link type="text/css" rel="stylesheet" href="assets/css/securify.css">
+
+
+  <style>
+    .get {
+      background: url(assets/img/bg-star.jpg);
+      background-size: 100%;
+      color: #fff;
+      padding: 0px 0;
+      font-size: x-large;
+    }
+
+    .get-title {
+      padding: 20px;
+      display: inline-block;
+    }
+
+    .get-btn {
+      background: #fff;
+    }
+
+    .detail {
+      background: url(assets/img/bg-code.jpg);
+      background-size: 100%;
+    }
+
+    .code-editor {
+      background: #fff;
+    }
+
+    .lang_button {
+      border-width: 0px;
+      /*border-color: ;*/
+      border-radius: 15px;
+      front-size: 10px;
+      outline: none;
+      cursor: pointer;
+      text-align: center;
+      white-space: nowrap;
+      text-decoration: none;
+      background: #d1d1d2;
+      padding: 3px 22px;
+      transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+      transition-property: color, background-color, box-shadow, border-color;
+
+
+    }
+
+    .lang_button:hover {
+      background: #bababb;
+
+    }
+
+    .lang_selected {
+      background: #474749;
+      font-weight: bold;
+      color: #FFFFFF;
+    }
+
+
+    .service_selected {
+      background: #474749;
+      font-weight: bold;
+      color: #FFFFFF;
+    }
+
+    .detail-h2 {
+      text-align: center;
+      font-size: 150%;
+      margin: 40px 0;
+    }
+
+    .detail-h3 {
+      color: #1f8dd6;
+    }
+
+    .detail-p {
+      color: #7f8c8d;
+    }
+
+    .detail-mb {
+      margin-bottom: 30px;
+    }
+
+    .hope {
+      padding: 50px 0;
+    }
+
+    .hope-img {
+      text-align: center;
+    }
+
+    .hope-hr {
+      border-color: #149C88;
+    }
+
+    .hope-title {
+      text-align: center;
+      font-size: 140%;
+    }
+
+    .about {
+      background: #fff;
+      padding: 40px 0;
+      color: #7f8c8d;
+    }
+
+    .about-color {
+      color: #34495e;
+    }
+
+    .about-title {
+      font-size: 180%;
+      padding: 30px 0 50px 0;
+      text-align: center;
+    }
+
+    .footer p {
+      color: #7f8c8d;
+      margin: 0;
+      padding: 8px 0;
+      text-align: center;
+      background: #2d3e50;
+    }
+
+    #input_p {
+      margin: 0;
+      display: inline-block;
+      width: 49%;
+    }
+
+    #output_p {
+      margin: 0;
+      display: inline-block;
+      width: 49%;
+    }
+
+    #editor {
+      margin: 0;
+      display: inline-block;
+      width: 49%;
+      height: 380px;
+    }
+
+    #editor1 {
+      margin: 0;
+      display: inline-block;
+      width: 49%;
+      height: 380px;
+    }
+
+    .report-subcontainer {
+      margin-bottom: 7px;
+      box-sizing: border-box;
+      display: block;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .report-hr {
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.8;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    .report-subcontainer-text {
+      font-size: 16px;
+    }
+
+    .warning-text {
+      font-size: 16px;
+    }
+
+    .total-count {
+      float: right;
+      font-weight: 300;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.8
+    }
+
+    .myMarker {
+      position: absolute;
+      background: rgba(100, 200, 100, 0.5);
+      z-index: 20
+    }
+
+    .errorHighlight {
+      position: absolute;
+      z-index: 20;
+      background-color: #F4B9B7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="get">
+    <div class="am-g">
+      <div class="am-u-lg-12" style="padding-left: 18%">
+        <h1 class="get-title">CryptTool</h1>
+        <p style="padding-left: 20px; ">
+          An Automatic Code Generator for Cryptographic Tasks in Ethereum Smart Contracts
+        </p>
+        <p style="text-align: right; padding-right: 18%; padding-bottom: 15px">
+	  <a href="https://youtube.com" class="am-btn am-btn-default am-round" target="_blank">Youtube
+	    <i class="am-icon-youtube am-icon-sm"></i></a>
+          <a href="https://github.com/faderer/Cryptlang" class="am-btn am-btn-default am-round" target="_blank">Readme
+            <i class="am-icon-github am-icon-sm"></i></a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="detail">
+    <div class="am-g">
+      <div class="am-u-lg-12" style="text-align: center; font-size: 20px">
+        <div class="am-u-sm-12 am-u-md-12 am-margin">
+          <!-- <strong>智能合约语言：</strong>
+          <button class="lang_button" id="go_button" onClick="SelectLang(this.id)">Go</button>
+          <button class="lang_button" id="solidity_button" onclick="SelectLang(this.id)">Solidity</button>
+
+          <!--            <select onchange=SelectLang(this) id="select_language">-->
+          <!--              <option value="" disabled selected hidden>请选择</option>-->
+          <!--              <option value="Solidity">Solidity</option>-->
+          <!--              <option value="Go">Go</option>-->
+          <!--            </select>-->
+
+          <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <strong>检测服务：</strong>
+          <button class="lang_button" id="security_analysis" onClick="SelectServ(this.id)">漏洞检测</button>
+          <button class="lang_button" id="function_verify" onClick="SelectServ(this.id)">形式化验证</button> -->
+          <!--            <select onchange=SelectServ(this) id="select_service">-->
+          <!--              <option value="" disabled selected hidden>请选择</option>-->
+          <!--              <option value="known_debug">已知漏洞检测</option>-->
+          <!--              <option value="unknown_debug">未知漏洞分析</option>-->
+          <!--              <option value="function_verify">形式化验证</option>-->
+          <!--            </select>-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <strong>Test Samples：</strong>
+          <select onchange=select_sample(this) id="select_sample">
+            <option value="" disabled selected hidden>Options</option>
+            <option value="ECDSA">ECDSA</option>
+            <option value="RSA">RSA</option>
+            <option value="Merkle">Merkle</option>
+            <option value="Pederson">Pederson</option>
+	    
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="detail">
+    <div class="am-g am-container" style="padding-left: 10px;padding-right: 10px;">
+      <div class="am-u-lg-12 am-margin" style="margin-left:10px;margin-right:10px;">
+        <div class="am-g code-editor">
+          <div class="admin-content">
+            <div class="admin-content-body">
+              <div class="am-tabs am-margin" data-am-tabs="{noSwipe: 1}">
+                <div class="am-tabs-bd">
+                  <div class="am-tab-panel am-active" id="tab_contract">
+                    <form class="am-form">
+                      <div class="am-u-sm-12 am-u-md-12 am-margin-top">
+                        <p><strong>Task Name</strong></p>
+                      </div>
+                      <div class="am-u-sm-12 am-u-md-12">
+                        <textarea rows="1" placeholder="CryptLang Name" id="solidity_name"></textarea>
+                      </div>
+                      <div class="am-u-sm-12 am-u-md-12 am-margin-top">
+                        <p id="input_p"><strong>CryptLang Code</strong></p>
+                        <p id="output_p"><strong>Solidity Code</strong></p>
+                      </div>
+                      <div class="am-u-sm-12 am-u-md-12">
+                        <pre id="editor"></pre>
+                        <pre id="editor1"></pre>
+                      </div>
+                      <div class="am-u-sm-12 am-u-md-12 am-margin-top" align="center">
+                        <button type="button" class="am-btn am-btn-primary am-btn-xl am-round"
+                          onclick=analyze_solidity() id="start_button_1"><strong id="changeState">Generate
+                            Code</strong></button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div id="contain" class="content-container" style="display: none;"> -->
+  <!-- <div class="container ">
+      <img src="assets/img/M.png" style="height: 34px;" class="security-logo security-logo--analysis">
+      <h2 class="section-4-head"><span>检测报告</span></h2>
+      <div class="col-xs-12 col-sm-6 padding-0 margin-top-20 security-items-container">
+        <div class="panel-group" id="accordion"> -->
+  <!-- <div class="total-issues-container">
+                     <div id="issues-found-container" class="">
+                         <span class="total-text uppercase">Total </span>
+                         <span class="total-text">issues</span>
+                         <span class="total-text total-count total-issue-count"></span>
+                     </div>
+                     <div id="no-issues-found-container" class="hidden">
+                         <span class="total-text">No issues found</span>
+                     </div>
+
+                 </div> -->
+  <!-- <div class="report-subcontainer">
+            <hr class="report-hr">
+            <span class="report-subcontainer-text">审计结果</span>
+            <span class="warning-text total-count TransactionReordering-count"></span>
+          </div> -->
+  <!-- <div id="vul_list" class="panel panel-default expanded">
+            <div class="panel-heading" data-toggle="collapse" href="#collapse1">
+              <h4 class="panel-title expand">
+                <div class="right-arrow pull-right"></div>
+                <span id="verify"></span>
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in" aria-expanded="true">
+              <div class="vullist clearfix">
+                <p class="penal-item"></p>
+              </div>
+            </div>
+          </div> -->
+
+  <!-- <div class="report-subcontainer">
+              <hr class="report-hr">
+                <span class="report-subcontainer-text">漏洞检测结果</span>
+                <span class="warning-text total-count TransactionReordering-count"></span>
+            </div>
+            <div id="vul_list_TODTransfer_2" class="panel panel-default expanded">
+              <div class="panel-heading" data-toggle="collapse">
+                <h4 class="panel-title expand">
+                  <div class="right-arrow pull-right"></div>
+                  <span id = "random"></span>
+                </h4>
+              </div> -->
+  <!-- <div id="collapse2" class="panel-collapse collapse in" aria-expanded="true">
+                <div class="vullist clearfix"><p class="penal-item">No issues found</p></div>
+              </div> -->
+  <!-- </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- </div> -->
+
+
+
+  <footer class="footer">
+    <p>
+      <a href="https://github.com/SabakGaara/Re-entrancy" target="_blank"
+        style="padding-left: 6px; padding-right: 6px;">Github
+        <i class="am-icon-github am-icon-sm"></i>
+      </a>
+      <a href="https://youtu.be/J6EKP1crtwI" target="_blank" style="padding-left: 6px; padding-right: 6px;">Youtube
+        <i class="am-icon-youtube am-icon-sm"></i>
+      </a>
+    </p>
+  </footer>
+  <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/dreamweaver");
+    editor.session.setMode("ace/mode/solidity");
+    editor.setFontSize(13);
+    var editor1 = ace.edit("editor1");
+    editor1.setTheme("ace/theme/dreamweaver");
+    editor1.session.setMode("ace/mode/solidity");
+    editor1.setFontSize(13);
+    document.getElementById("solidity_name").value = "";
+    // editor.setValue("pragma solidity ^0.4.15;\n\r\n\rcontract generic_holder {\n\r    address owner;\n\r    address target = 0xca35b7d915458ef540ade6068dfe2f44e8fa733c;\n\r    address buyer = 0xc435b7d915458ef540ade6068dfe2f44e8fa723e;\n\r    modifier onlyowner {\n\r        if (owner == msg.sender)\n\r            _;\n\r    }\n\r    \n\r    // constructor\n\r    function generic_holder() {\n\r        owner = msg.sender;\n\r    }\n\r\n\r    function changetarget(address sender) onlyowner{\n\r        target = sender;\n\r    } \n\r    \n\r    function change_owner(address new_owner) {\n\r        owner = new_owner;\n\r    }\n\r    \n\r    function execute(uint _value, bytes _data) external onlyowner returns (bool){\n\r        return target.call.value(_value)(_data);\n\r    }\n\r\n\r    function send(address _to, uint _value) external onlyowner returns (bool){\n\r        return _to.send(_value); \n\r    }\n\r    \n\r    function get_owner() constant returns (address) {\n\r        return owner;\n\r    }\n\r    \n\r}");
+
+    var erroneousLines = new Array();
+
+    function highlightError(lineNumber) {
+      var Range = ace.require("ace/range").Range
+      erroneousLines.push(editor.session.addMarker(new Range(lineNumber, 0, lineNumber, 144), "errorHighlight", "fullLine"));
+      erroneousLines.push(editor1.session.addMarker(new Range(lineNumber, 0, lineNumber, 144), "errorHighlight", "fullLine"));
+    }
+    function unhighlightError() {
+      // alert(erroneousLine);
+      erroneousLines.forEach(element => {
+        editor.getSession().removeMarker(element);
+      });
+
+    }
+
+  </script>
+  <script src="assets/js/taint_samples.js"></script>
+  <script src="assets/js/taint_analyze.js"></script>
+  <script type="text/javascript">select_sample(document.getElementById("sample_select"));</script>
+  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+  <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+  <![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+  <script src="assets/js/amazeui.min.js"></script>
+</body>
+
+</html>
