@@ -1,4 +1,4 @@
-# CryptTool
+# CryptCoder
 
 ## Installation and setup
 
